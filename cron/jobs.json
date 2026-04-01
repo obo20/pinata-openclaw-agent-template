@@ -1,0 +1,16 @@
+[
+  {
+    "id": "whale-tracker",
+    "schedule": "*/15 * * * *",
+    "agent": "main",
+    "message": "Check watchlist wallets for new activity since last check. Report any significant transfers.",
+    "enabled": false
+  },
+  {
+    "id": "price-monitor",
+    "schedule": "*/15 * * * *",
+    "agent": "main",
+    "message": "Check current prices for all monitored tokens and NFT collections. Report any moves greater than the alert threshold.",
+    "enabled": false
+  }
+]

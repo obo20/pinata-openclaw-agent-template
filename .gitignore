@@ -1,0 +1,7 @@
+.env
+node_modules/
+workspace/memory/*.md
+!workspace/memory/.gitkeep
+.openclaw/
+workspace/TOOLS.md
+claude.md

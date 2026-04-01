@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "agent": {
+    "name": "Alchemy Agent",
+    "description": "On-chain intelligence powered by Alchemy. Wallet profiling, whale tracking, and price monitoring across 100+ chains.",
+    "vibe": "on-chain intelligence",
+    "emoji": "⚗️"
+  },
+  "template": {
+    "slug": "alchemy-agent",
+    "category": "blockchain",
+    "partnerName": "Alchemy",
+    "tags": ["blockchain", "alchemy", "wallet", "whale-tracking", "price-monitoring", "defi", "nft"]
+  },
+  "skills": [
+    {
+      "cid": "alchemy-official",
+      "name": "alchemy-official"
+    }
+  ],
+  "secrets": [
+    {
+      "name": "ALCHEMY_API_KEY",
+      "description": "Alchemy API key from https://dashboard.alchemy.com",
+      "required": true
+    },
+    {
+      "name": "ANTHROPIC_API_KEY",
+      "description": "Anthropic API key (required if using Claude models)",
+      "required": false
+    },
+    {
+      "name": "OPENAI_API_KEY",
+      "description": "OpenAI API key (required if using GPT models)",
+      "required": false
+    }
+  ],
+  "tasks": [
+    {
+      "name": "whale-tracker",
+      "prompt": "Check watchlist wallets for new activity since last check. Report any significant transfers.",
+      "schedule": "*/15 * * * *",
+      "enabled": false
+    },
+    {
+      "name": "price-monitor",
+      "prompt": "Check current prices for all monitored tokens and NFT collections. Report any moves greater than the alert threshold.",
+      "schedule": "*/15 * * * *",
+      "enabled": false
+    }
+  ]
+}
