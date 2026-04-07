@@ -14,7 +14,7 @@
   },
   "skills": [
     {
-      "cid": "alchemy-official",
+      "clawhub_slug": "alchemy-official",
       "name": "alchemy-official"
     }
   ],
