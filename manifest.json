@@ -9,7 +9,9 @@
   "template": {
     "slug": "alchemy-pinata-agent",
     "category": "blockchain",
-    "partnerName": "Alchemy",
+    "authorName": "Alchemy",
+    "authorUrl": "https://www.alchemy.com/",
+    "authorLogoUrl": "https://alchemyapi-res.cloudinary.com/image/upload/v1775607442/docs/home/alchemy_q0eaf0.jpg",
     "tags": ["blockchain", "alchemy", "wallet", "whale-tracking", "price-monitoring", "defi", "nft"]
   },
   "skills": [
